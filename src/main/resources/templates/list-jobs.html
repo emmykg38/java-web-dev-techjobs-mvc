@@ -32,7 +32,9 @@
     each job as a row in the table
     <table class="job-listing">
         <tr th:each="job : ${jobs}">
-            <td th:text="${job}"></td>
+            <td>
+                <span style="white-space: pre-wrap" th:text="${job}"></span>
+            </td>
         </tr>
     </table>
 

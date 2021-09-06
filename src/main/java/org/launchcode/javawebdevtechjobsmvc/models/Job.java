@@ -49,7 +49,7 @@ public class Job {
             positionType.setValue("Data not available");
         }
 
-        output = String.format("\nID: %d\n" +
+        output = String.format("ID: %d\n" +
                 "Name: %s\n" +
                 "Employer: %s\n" +
                 "Location: %s\n" +
