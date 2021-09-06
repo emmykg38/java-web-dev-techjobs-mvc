@@ -12,6 +12,34 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
+<!--    for each job in job results, display job in its own table, with one job field (employer, coreComp, etc) per row-->
+
+
+
+<!--    each job is its own table-->
+<!--    <th:block th:each="job : ${jobs}">-->
+<!--        <table>-->
+<!--            <tr th:text="${job.key}">-->
+<!--                <td th:text="${job.id}"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td th:text="${job.name}"></td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--    </th:block>-->
+
+
+    each job as a row in the table
+    <table class="job-listing">
+        <tr th:each="job : ${jobs}">
+            <td th:text="${job}"></td>
+        </tr>
+    </table>
+
+
+
+
+
 </div>
 
 </body>
